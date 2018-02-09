@@ -2,6 +2,8 @@ int *alloc_1d(int cols)
 {
 	// !!! IMPLEMENT ME
 	// (solution is about 2 lines of code)
+    int *arr = malloc(cols * sizeof(int));
+    return arr;
 }
 
 void alloc_1d_example(void)

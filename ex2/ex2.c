@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <stdio.h>
+
 int **alloc_2d(int rows, int cols)
 {
 	// !!! IMPLEMENT ME

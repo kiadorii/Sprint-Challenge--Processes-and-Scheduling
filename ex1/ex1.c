@@ -1,8 +1,11 @@
+#include <stdlib.h>
+#include <stdio.h>
+
 int *alloc_1d(int cols)
 {
 	// !!! IMPLEMENT ME
 	// (solution is about 2 lines of code)
-    int *arr = malloc(cols * sizeof(int));
+    int* arr = (int*) malloc(cols * sizeof(int));
     return arr;
 }
 
@@ -19,4 +22,10 @@ void alloc_1d_example(void)
 	// are 100% equivalent.
 
 	printf("my_array[8] = %d\n", my_array[8]);
+}
+
+int main() {
+	alloc_1d_example();
+
+	return 0;
 }

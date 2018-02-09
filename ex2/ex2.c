@@ -11,6 +11,8 @@ int **alloc_2d(int rows, int cols)
     for (i = 0; i < rows; i++) {
         arr[i] = malloc(cols * sizeof(int));
     }
+
+	return arr;
 }
 
 void alloc_2d_example(void)
@@ -27,4 +29,9 @@ void alloc_2d_example(void)
 	// are 100% equivalent.
 	
 	printf("my_array[2][3] = %d\n", my_array[2][3]);
+}
+
+int main() {
+	alloc_2d_example();
+	return 0;
 }

@@ -2,6 +2,12 @@ int **alloc_2d(int rows, int cols)
 {
 	// !!! IMPLEMENT ME
 	// (solution is about 5 lines of code)
+    int **arr = malloc(cols * sizeof(int*));
+    int i;
+
+    for (i = 0; i < rows; i++) {
+        arr[i] = malloc(cols * sizeof(int));
+    }
 }
 
 void alloc_2d_example(void)
